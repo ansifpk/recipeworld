@@ -59,8 +59,10 @@ const LoginForm = () => {
       method: "post",
       body: { email, password },
       onSuccess: (data) => {
-        dispatch(setUser(data));
-        navigate("/");
+        console.log(data,"//");
+        
+        // dispatch(setUser(data));
+        // navigate("/");
       },
     });
   };
